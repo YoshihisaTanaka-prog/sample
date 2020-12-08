@@ -12,8 +12,9 @@ Rails.application.routes.draw do
 
   get 'edits/caution'
 
-  get 'edits/aupdate', to: 'edits#/authentication_update'
-  patch 'edits/aupdate', to: 'edits#/authentication_update'
+  get 'edits/aupdate', to: 'edits#authentication_update'
+  post 'edits/aupdate', to: 'edits#authentication_update'
+  patch 'edits/aupdate', to: 'edits#authentication_update'
 
   devise_for :users
   
