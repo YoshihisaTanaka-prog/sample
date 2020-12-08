@@ -32,7 +32,7 @@ class ApplicationController < ActionController::Base
 
 
     # データ点数（を計算するパラメータ）の取得
-    def get_hash_main data title_list
+    def get_hash_main (data,title_list)
         score_list = data.split(",")
         score_num_hash = {}
         num = 0
