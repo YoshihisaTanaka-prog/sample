@@ -34,7 +34,7 @@
                 <td><%= link_to "-" ,edits_update_path( {:user_id => obj.id, :level => obj.level - 1} ) %></td>
             <% end %>
             
-            <td><%= link_to "+" ,edits_update_path( {:user_id => obj.id, :level => obj.level + 1} ) %></td>
+            <td><%= link_to "+" ,edits_aupdate_path( {:user_id => obj.id, :level => obj.level + 1} ) %></td>
         </tr>
         <% end %>
     <% end %>
