@@ -1,7 +1,7 @@
 class EditsController < ApplicationController
 
     before_action :authenticate_user!
-    layout "edit"
+    layout "edits"
   
     def index
         limit_normal 1

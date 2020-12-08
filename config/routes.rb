@@ -4,7 +4,6 @@ Rails.application.routes.draw do
 
   get 'homes/index'
   get 'homes/caution'
-  get 'homes/authentication'
 
   get 'edits', to: 'edits#index'
   
