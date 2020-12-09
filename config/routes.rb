@@ -20,6 +20,7 @@ Rails.application.routes.draw do
 
   get 'statistics', to: 'statistics#index'
 
+  get 'lines-output', to: 'lines_output#callback'
   post 'lines-output', to: 'lines_output#callback'
 
   devise_scope :user do
