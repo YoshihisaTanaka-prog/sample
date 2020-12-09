@@ -7,6 +7,10 @@ class EditsController < ApplicationController
         limit_normal 1
     end
 
+    def caution
+        @level = params["level"]
+    end
+
     def authentication_update
         limit_strong
 
