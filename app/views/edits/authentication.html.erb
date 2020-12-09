@@ -1,24 +1,17 @@
 
 <p><%= @msg %></p>
 <table>
-    <%= form_tag(controller: "edits" , action: "authentication") do %>
-    <tr>
-        <th>Find</th>
-    </tr>
-    <tr>
-        <td><%= text_field_tag("find") %></td>
-    </tr>
-    <tr>
-        <td><%= submit_tag("Click") %></td>
-    </tr>
+    <%= search_form_for @q, url: edits_authentication_path do |f| %>
+    <%= f.label :email_or_level, "キーワード検索" %>
+    <%= f.search_field :email_or_level_cont %>
+    <%= f.submit "検索" %>
     <% end %>
 </table>
 
 <hr>
 
 <table>
-    <% if @users.blank? then%>
-    <% else %>
+    <% if !@users.blank? then%>
         <tr>
             <th>Mail</th><th>Id</th><th>Level</th><th></th><th></th>
         </tr>

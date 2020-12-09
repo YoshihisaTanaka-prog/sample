@@ -25,14 +25,11 @@ class EditsController < ApplicationController
     def authentication
         
         limit_strong
+        
         @msg = "Please type search word..."
-
-        if request.post? then
-            f = '%' + params["find"] + '%'
-            @users = User.where "email like ?", f
-        else
-            @users = User.all
-        end
+    
+        @q = User.ransack(params[:q])
+        @users = @q.result(distinct: true)
 
     end
 
