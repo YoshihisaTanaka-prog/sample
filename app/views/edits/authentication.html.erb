@@ -3,6 +3,7 @@
 <table>
     <%= search_form_for @q, url: edits_authentication_path do |f| %>
     <%= f.label :email_or_level, "キーワード検索" %>
+    <br>
     <%= f.search_field :email_or_level_cont %>
     <%= f.submit "検索" %>
     <% end %>
