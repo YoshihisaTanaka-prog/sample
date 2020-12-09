@@ -20,6 +20,8 @@ Rails.application.routes.draw do
 
   get 'statistics', to: 'statistics#index'
 
+  post 'lines-output', to: 'lines_output#callback'
+
   devise_scope :user do
     get '/users/sign_out' => 'devise/sessions#destroy'
   end

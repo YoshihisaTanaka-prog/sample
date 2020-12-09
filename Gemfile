@@ -69,3 +69,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 
 gem 'ransack'
+
+# line botとトークンを管理するものをインストール
+gem 'line-bot-api'
+gem 'dotenv-rails'
