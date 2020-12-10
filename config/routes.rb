@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root to: 'homes#index'
 
   get 'homes/index'
+  get 'homes/show'
+  get 'homes/constructing'
   get 'homes/caution'
 
 

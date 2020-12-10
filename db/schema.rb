@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_08_154514) do
+ActiveRecord::Schema.define(version: 2020_12_10_054457) do
+
+  create_table "routes", force: :cascade do |t|
+    t.string "before_id"
+    t.string "next_title_name"
+    t.string "table_name"
+    t.string "after_id"
+    t.text "score"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

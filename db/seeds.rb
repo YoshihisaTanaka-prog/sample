@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Route.create(:before_id => "0", :next_title_name => "何を聞かれていますか？", :table_name => "関数", :after_id => "0-1", :score => "")
+Route.create(:before_id => "0", :next_title_name => "何を聞かれていますか？", :table_name => "図形", :after_id => "0-2", :score => "")
