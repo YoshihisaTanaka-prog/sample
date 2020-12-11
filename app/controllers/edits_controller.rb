@@ -2,6 +2,13 @@ class EditsController < ApplicationController
 
     before_action :authenticate_user!
     layout "edits"
+
+    def initialize
+        @@id = ""
+        @@title = ""
+        @@before_id = ""
+        @@ids = [""]
+    end
   
     def index
         limit_normal 1
