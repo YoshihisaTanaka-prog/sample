@@ -1,0 +1,15 @@
+<%= form_tag(controller: "edits", action: "edit_update") do %>
+<table>
+    <tr>
+        <th>選択肢を記入</th>
+        <td><%= text_field_tag("table_name") %></td>
+    </tr>
+    <tr>
+        <th>次のページのタイトル名を記入</th>
+        <td><%= text_field_tag("next_title_name") %></td>
+    </tr>
+    <tr>
+    <th></th>
+    <td><%= submit_tag("更新")%></td>
+    </tr>
+<% end %>

@@ -19,6 +19,13 @@ Rails.application.routes.draw do
   post 'edits/aupdate', to: 'edits#authentication_update'
   patch 'edits/aupdate', to: 'edits#authentication_update'
 
+  get 'edits/add'
+  post 'edits/add'
+  get 'edits/edit'
+  post 'edits/edit'
+  get 'edits/show'
+  post 'edits/show'
+
 
   get 'statistics', to: 'statistics#index'
 
